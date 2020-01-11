@@ -4,13 +4,13 @@ chrome.browserAction.onClicked.addListener(function() {
 		active: true
 	}, function(tab) {
 		chrome.tabs.create({
-			"url": "https://sci-hub.se/"
+			"url": "https://mg.scihub.ltd/"
 		});
 	});
 });
 
 function searchTextOnSciHub(doi){
-	var myQuery = encodeURI('https://sci-hub.se/' + doi.selectionText);
+	var myQuery = encodeURI('https://mg.scihub.ltd/' + doi.selectionText.trim());
 	chrome.tabs.create({
 		url: myQuery
 	});
