@@ -7,7 +7,7 @@ Opera extension for search arcticles on Sci-Hub using DOI
 3. Drag-and-drop **sci-hub-doi-finder.crx** file into window
 4. Click **Install**
 
-### To open sci-hub [mg.scihub.ltd](https://mg.scihub.ltd/)
+### To open sci-hub [sci-hub.do](https://sci-hub.do/)
 click icon on extension bar
 
 ### To open article using DOI:
