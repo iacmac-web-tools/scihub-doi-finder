@@ -4,14 +4,15 @@ chrome.browserAction.onClicked.addListener(function() {
 		active: true
 	}, function(tab) {
 		chrome.tabs.create({
-			"url": "https://sci-hub.do/"
+			"url": localStorage.sciHubUrl || "https://sci-hub.do/"
 		});
 	});
 });
 
 function searchTextOnSciHub(doi){
 	// https://mg.scihub.ltd/10.1126/science.aax3872
-	var myQuery = encodeURI('https://sci-hub.do/' + doi.selectionText.trim());
+	var url = localStorage.sciHubUrl || "https://sci-hub.do/";
+	var myQuery = encodeURI(url + doi.selectionText.trim());
 	chrome.tabs.create({
 		url: myQuery
 	});

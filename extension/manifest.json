@@ -1,5 +1,5 @@
 {
-	"manifest_version": 3,
+	"manifest_version": 2,
 
 	"name": "SciHub - DOI",
 	"description": "Searching articles on Sci-Hub using DOI",
@@ -15,6 +15,7 @@
         "48": "icon-48.png",
         "128": "icon-128.png"
 	},
+	"options_page": "options_page.html",
 	"browser_action": {
 		"default_icon": "icon-128.png",
 		"default_title": "Go to Sci-Hub!"

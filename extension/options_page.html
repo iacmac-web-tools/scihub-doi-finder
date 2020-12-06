@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            display: grid;
+            -webkit-box-align: center;
+            align-items: center;
+        }
+
+        form {
+            display: -webkit-box;
+            display: flex;
+            flex-wrap: wrap
+        }
+
+        form>input {
+            -webkit-box-flex: 1;
+            flex: 1 1 10ch;
+            margin: .5rem
+        }
+
+        form>input[type="email"] {
+            -webkit-box-flex: 3;
+            flex: 3 1 30ch;
+        }
+
+        input {
+            border: none;
+            background: hsl(0, 0%, 93%);
+            border-radius: .25rem;
+            padding: .75rem 1rem
+        }
+
+        input[type="submit"] {
+            background: hotpink;
+            color: white;
+            box-shadow: 0 .75rem .5rem -.5rem hsl(0, 50%, 80%);
+        }
+    </style>
+</head>
+
+<body>
+    <form id="formSciHub" onsubmit="return setUrl(this)">
+        <div>
+            <input type="url" placeholder="Sci-Hub default url" id="url">
+        </div>
+        <button type="submit">Set Sci-Hub Url</button>
+    </form>
+    <script src="settings-form.js"></script>
+</body>
+
+</html>
