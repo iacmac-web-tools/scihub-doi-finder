@@ -3,7 +3,7 @@
 
 	"name": "SciHub - DOI",
 	"description": "Searching articles on Sci-Hub using DOI",
-	"version": "1.3",
+	"version": "1.4",
 	"background": {
 		"scripts": ["background.js"]
 	},
